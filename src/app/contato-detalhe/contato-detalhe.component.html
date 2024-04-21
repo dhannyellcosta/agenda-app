@@ -1,0 +1,16 @@
+
+<h2 mat-dialog-title class="alinhar-dialog">
+    <mat-icon>face</mat-icon>
+    Contato
+</h2>
+<mat-dialog-content class="alinhar-dialog">
+    <img class="foto" mat-card-image src="data:image/jpg;base64,{{ contato.foto }}">
+    <p>
+        <strong>{{ contato.nome }}</strong><br/>
+        <strong>{{ contato.email }}</strong><br/>
+    </p>
+</mat-dialog-content>
+<div class="alinhar-dialog">
+    <button mat-raised-button color="primary" (click)="fechar()">Fechar</button>
+</div>
+
